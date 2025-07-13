@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Allow crawling of product pages
+Allow: /products/
+Allow: /categories/
+
+# Disallow admin and user-specific pages
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /payment/
+Disallow: /orders/
+Disallow: /profile/
+
+# Disallow search parameters that might create duplicate content
+Disallow: /*?sort=*
+Disallow: /*?filter=*
+Disallow: /*?page=*
+
+# Point to sitemap
+Sitemap: https://keysncaps.com/sitemap.xml
+
+# Crawl delay to be respectful
+Crawl-delay: 1
+
