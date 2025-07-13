@@ -311,7 +311,7 @@ const ProductListing: React.FC = () => {
 
   // Animation variants
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 }, // Changed from 0 to 1 to ensure visibility
     visible: {
       opacity: 1,
       transition: {
@@ -321,7 +321,7 @@ const ProductListing: React.FC = () => {
   };
   
   const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { y: 10, opacity: 1 }, // Changed from 0 to 1 to ensure visibility
     visible: {
       y: 0,
       opacity: 1,
